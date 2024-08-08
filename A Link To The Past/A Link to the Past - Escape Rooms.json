@@ -1,0 +1,279 @@
+{
+  "game": "The Legend of Zelda: A Link to the Past",
+  "autostart": {
+    "active": "1",
+    "note": "Splits for every room in escape. Run starts on fileselect. 0x8A is screen id. 0xA0 is room id. 0xA9 and 0xAA are quadrant x and y axes.",
+    "address": "0x10",
+    "value": "0x05",
+    "type": "eq"
+  },
+
+  "definitions": [
+    {
+      "name": "Inside House",
+      "address": "0x8A",
+      "value": "0x2C",
+      "type": "eq"
+    },    
+    {
+      "name": "Outside House",
+      "address": "0x8A",
+      "value": "0x1B",
+      "type": "eq"
+    }, 
+    {
+      "name": "Outer Courtyard",
+      "address": "0xA0",
+      "value": "0x55",
+      "type": "eq"
+    },   
+    {
+      "name": "Uncle",
+      "address": "0xAA",
+      "value": "0x02",
+      "type": "eq"
+    }, 
+    {
+      "name": "After Uncle",
+      "address": "0x8A",
+      "value": "0x1B",
+      "type": "eq"
+    }, 
+    {
+      "name": "Courtyard",
+      "address": "0xA0",
+      "value": "0x61",
+      "type": "eq"
+    }, 
+    {
+      "name": "Lobby",
+      "address": "0xA0",
+      "value": "0x60",
+      "type": "eq"
+    }, 
+    {
+      "name": "Left Hall",
+      "address": "0xA0",
+      "value": "0x50",
+      "type": "eq"
+    }, 
+    {
+      "name": "Hall Guards",
+      "address": "0xA0",
+      "value": "0x01",
+      "type": "eq"
+    }, 
+    {
+      "name": "Back Stairs",
+      "address": "0xA0",
+      "value": "0x72",
+      "type": "eq"
+    }, 
+    {
+      "name": "Key Guard 1",
+      "address": "0xAA",
+      "value": "0x02",
+      "type": "eq"
+    }, 
+    {
+      "name": "Ledge Drop",
+      "address": "0xA0",
+      "value": "0x82",
+      "type": "eq"
+    }, 
+    {
+      "name": "Pit Guards",
+      "address": "0xA0",
+      "value": "0x81",
+      "type": "eq"
+    }, 
+    {
+      "name": "Stealth Room",
+      "address": "0xA0",
+      "value": "0x71",
+      "type": "eq"
+    }, 
+    {
+      "name": "Three Doors",
+      "address": "0xA9",
+      "value": "0x01",
+      "type": "eq"
+    }, 
+    {
+      "name": "Key Guard 2",
+      "address": "0xA9",
+      "value": "0x00",
+      "type": "eq"
+    }, 
+    {
+      "name": "Three Doors Again",
+      "address": "0xAA",
+      "value": "0x00",
+      "type": "eq"
+    }, 
+    {
+      "name": "More Stairs",
+      "address": "0xA0",
+      "value": "0x70",
+      "type": "eq"
+    }, 
+    {
+      "name": "Mezzanine",
+      "address": "0xA0",
+      "value": "0x80",
+      "type": "eq"
+    }, 
+    {
+      "name": "Zelda",
+      "address": "0xA0",
+      "value": "0x70",
+      "type": "eq"
+    }, 
+    {
+      "name": "Mezzanine Again",
+      "address": "0xA0",
+      "value": "0x71",
+      "type": "eq"
+    }, 
+    {
+      "name": "More Stairs Again",
+      "address": "0xAA",
+      "value": "0x02",
+      "type": "eq"
+    }, 
+    {
+      "name": "Three Doors Again Again",
+      "address": "0xA0",
+      "value": "0x81",
+      "type": "eq"
+    }, 
+    {
+      "name": "Stealth Room Again",
+      "address": "0xA0",
+      "value": "0x82",
+      "type": "eq"
+    }, 
+    {
+      "name": "Side Ledge",
+      "address": "0xA0",
+      "value": "0x72",
+      "type": "eq"
+    }, 
+    {
+      "name": "Ledge Drop Again",
+      "address": "0xAA",
+      "value": "0x00",
+      "type": "eq"
+    }, 
+    {
+      "name": "Key Guard 1 Again",
+      "address": "0xA0",
+      "value": "0x01",
+      "type": "eq"
+    }, 
+    {
+      "name": "Back Stairs Again",
+      "address": "0xA0",
+      "value": "0x50",
+      "type": "eq"
+    }, 
+    {
+      "name": "Hall Guards Again",
+      "address": "0xA0",
+      "value": "0x60",
+      "type": "eq"
+    }, 
+    {
+      "name": "Left Hall Again",
+      "address": "0xA0",
+      "value": "0x61",
+      "type": "eq"
+    }, 
+    {
+      "name": "Lobby Again",
+      "address": "0xA0",
+      "value": "0x51",
+      "type": "eq"
+    }, 
+    {
+      "name": "Throne Room",
+      "address": "0xA0",
+      "value": "0x41",
+      "type": "eq"
+    }, 
+    {
+      "name": "Behind Throne",
+      "address": "0xA0",
+      "value": "0x42",
+      "type": "eq"
+    }, 
+    {
+      "name": "Snakes",
+      "address": "0xA0",
+      "value": "0x32",
+      "type": "eq"
+    }, 
+    {
+      "name": "Dark Cross",
+      "address": "0xA0",
+      "value": "0x22",
+      "type": "eq"
+    }, 
+    {
+      "name": "Sewer",
+      "address": "0xA0",
+      "value": "0x21",
+      "type": "eq"
+    }, 
+    {
+      "name": "Sewer 2",
+      "address": "0xAA",
+      "value": "0x00",
+      "type": "eq"
+    }, 
+    {
+      "name": "Key Rat",
+      "address": "0xA0",
+      "value": "0x11",
+      "type": "eq"
+    }, 
+    {
+      "name": "Bonk Room (going left)",
+      "address": "0xA9",
+      "value": "0x00",
+      "type": "eq"
+    }, 
+    {
+      "name": "3 Chests",
+      "address": "0xA9",
+      "value": "0x01",
+      "type": "eq"
+    }, 
+    {
+      "name": "Bonk Room",
+      "address": "0xA0",
+      "value": "0x02",
+      "type": "eq"
+    }, 
+    {
+      "name": "Rats",
+      "address": "0xAA",
+      "value": "0x02",
+      "type": "eq"
+    }, 
+    {
+      "name": "Escape",
+      "note":"in Sanc, then waits for transition to end",
+      "address": "0xA0",
+      "value": "0x12",
+      "type": "eq",
+      "next": [
+        {
+          "address": "0x11",
+          "value": "0x00",
+          "type": "eq"
+        }
+      ] 
+    }
+  ]
+}
