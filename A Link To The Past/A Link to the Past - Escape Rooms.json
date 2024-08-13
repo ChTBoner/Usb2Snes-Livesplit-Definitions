@@ -2,7 +2,7 @@
   "game": "The Legend of Zelda: A Link to the Past",
   "autostart": {
     "active": "1",
-    "note": "Splits for every room in escape. Run starts on fileselect. 0x8A is screen id. 0xA0 is room id. 0xA9 and 0xAA are quadrant x and y axes.",
+    "note": "Splits for every room in escape. You may want to omit two of the splits near the end if your runs don't enter the 3 chest room. Run starts on fileselect and ends when the camera stops moving as you enter sanc. 0x8A is screen id. 0xA0 is room id. 0xA9 and 0xAA are quadrant x and y axes.",
     "address": "0x10",
     "value": "0x05",
     "type": "eq"
@@ -295,6 +295,7 @@
     }, 
     {
       "name": "Bonk Room (going left)",
+      "note": "get rid of this split and the next one if you're doing a normal NMG run",
       "address": "0xA9",
       "value": "0x00",
       "type": "eq",
@@ -340,15 +341,15 @@
     }, 
     {
       "name": "Escape",
-      "note":"in Sanc, then waits for transition to end",
+      "note":"in Sanc, then waits for camera to stop moving",
       "address": "0xA0",
       "value": "0x12",
       "type": "eq",
       "next": [
         {
-          "address": "0x11",
-          "value": "0x00",
-          "type": "eq"
+          "address": "0x45C",
+          "value": "0x08",
+          "type": "gt"
         }
       ] 
     }
